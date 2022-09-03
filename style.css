@@ -5,6 +5,10 @@
     margin: 0px;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -47,11 +51,17 @@ body {
     color: #3a6cff;
 }
 
-.logo {
+.logo, .logo-text {
     font-size: 24px;
     letter-spacing: 10px;
     font-weight: bold;
     color: #F9FAF8;
+}
+
+@media (max-width: 550px) {
+    .logo-text{
+        display:none;
+    }
 }
 
 .hero {
